@@ -272,3 +272,11 @@ h3 {
     border-bottom-right-radius: 5px;
 }
 
+.retweet .icon-retweet {
+    color: white;
+    margin: auto;
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+}
+
