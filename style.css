@@ -222,3 +222,8 @@ body {
     transition-timing-function: ease;
 }
 
+.icon-retweet:hover {
+    cursor: pointer;
+    color: #f39c12;
+}
+
