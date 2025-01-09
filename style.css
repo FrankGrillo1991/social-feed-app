@@ -80,3 +80,19 @@ body {
     margin-left: 2em;
 }
 
+.avatar img {
+    width: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid #ecf0f1;
+    position: relative;
+}
+
+.avatar:hover > .hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
