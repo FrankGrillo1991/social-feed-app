@@ -188,3 +188,22 @@ body {
     transition-timing-function: ease-in;
 }
 
+.icon-star {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+}
+
+.icon-star:hover {
+    cursor: pointer;
+    color: #f39c12;
+}
+
