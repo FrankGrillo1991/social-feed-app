@@ -71,3 +71,12 @@ body {
     margin-bottom: 2em;
 }
 
+.avatar {
+    width: 18%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2em;
+}
+
