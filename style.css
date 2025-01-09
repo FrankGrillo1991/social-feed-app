@@ -27,3 +27,16 @@ body {
     display: inline-block;
 }
 
+.bubble:hover > .over-bubble {
+    opacity: 1;
+}
+
+.bubble-container {
+    width: 75%;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+
