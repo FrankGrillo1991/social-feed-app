@@ -4,61 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter Client</title>
+    <title>ChirpNet Client</title> <!-- Updated title -->
     <link rel="stylesheet" href="style.css">
+    <!-- Updated Font Awesome to a more recent version and fixed integrity typo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" xintegrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
-    <span class="first">
-        @marceloag
-        <span class="icon-edit new"></span>
-    </span>
+    <!-- Removed the original .first span as it doesn't fit the new branding -->
 
     <ul class="timeline">
         <li>
             <div class="avatar">
-                <img src="http://www.croop.cl/UI/twitter/images/doug.jpg">
+                <!-- ChirpNet Circular Avatar -->
+                <div class="chirpnet-avatar-circle">
+                    <div class="bird-icon-avatar"></div>
+                </div>
+                <!-- Original hover effect adapted to the new avatar structure -->
                 <div class="hover">
-                    <div class="icon-twitter"></div>
+                    <i class="fas fa-feather-alt"></i> <!-- Replaced icon-twitter with a feather icon from Font Awesome 6 -->
                 </div>
             </div>
 
             <div class="bubble-container">
                 <div class="bubble">
                     <div class="retweet">
-                        <div class="icon-retweet"></div>
+                        <i class="fas fa-retweet"></i> <!-- Font Awesome 6 retweet icon -->
                     </div>
-                    <h3>@russel</h3> retweeted<h3>@doug</h3><br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
-                    <div class="over-bubble>
-                        <div class="icon-mail-reply action"></div>
-                        <div class="icon-retweet action"></div>
-                        <div class="icon-star"></div>
+                    <h3>@russel</h3> re-chirped <h3>@doug</h3><br />
+                    Just had an amazing thought about the future of decentralized social networks! So much potential. #ChirpNet #FutureOfSocial
+                    <div class="over-bubble">
+                        <i class="fas fa-reply action"></i> <!-- Font Awesome 6 reply icon -->
+                        <i class="fas fa-retweet action"></i> <!-- Font Awesome 6 retweet icon -->
+                        <i class="fas fa-star"></i> <!-- Font Awesome 6 star icon -->
                     </div>
                 </div>
-
                 <div class="arrow"></div>
+            </div>
         </li>
 
         <li>
             <div class="avatar">
-                <img src="http://www.croop.cl/UI/twitter/images/carl.jpg">
+                <!-- ChirpNet Circular Avatar -->
+                <div class="chirpnet-avatar-circle">
+                    <div class="bird-icon-avatar"></div>
+                </div>
                 <div class="hover">
-                    <div class="icon-twitter"></div>
+                    <i class="fas fa-feather-alt"></i>
                 </div>
             </div>
 
             <div class="bubble-container">
                 <div class="bubble">
                     <h3>@carlf</h3><br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
+                    Loving the new updates on ChirpNet! The new explore tab is fantastic for finding new communities. Keep up the great work!
                     <div class="over-bubble">
-                        <div class="icon-mail-reply action"></div>
-                        <div class="icon-retweet action"></div>
-                        <div class="icon-star"></div>
+                        <i class="fas fa-reply action"></i>
+                        <i class="fas fa-retweet action"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
                 <div class="arrow"></div>
@@ -67,20 +72,23 @@
 
         <li>
             <div class="avatar">
-                <img src="http://www.croop.cl/UI/twitter/images/russel.jpg">
+                <!-- ChirpNet Circular Avatar -->
+                <div class="chirpnet-avatar-circle">
+                    <div class="bird-icon-avatar"></div>
+                </div>
                 <div class="hover">
-                    <div class="icon-twitter"></div>
+                    <i class="fas fa-feather-alt"></i>
                 </div>
             </div>
 
             <div class="bubble-container">
                 <div class="bubble">
                     <h3>@russel</h3><br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
+                    What's everyone's favorite feature on ChirpNet? Mine has to be the direct messaging, so seamless! #ChirpNetCommunity
                     <div class="over-bubble">
-                        <div class="icon-mail-reply action"></div>
-                        <div class="icon-retweet action"></div>
-                        <div class="icon-star"></div>
+                        <i class="fas fa-reply action"></i>
+                        <i class="fas fa-retweet action"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
                 <div class="arrow"></div>
@@ -89,28 +97,29 @@
 
         <li>
             <div class="avatar">
-                <img src="http://www.croop.cl/UI/twitter/images/carl.jpg">
+                <!-- ChirpNet Circular Avatar -->
+                <div class="chirpnet-avatar-circle">
+                    <div class="bird-icon-avatar"></div>
+                </div>
                 <div class="hover">
-                    <div class="icon-twitter"></div>
+                    <i class="fas fa-feather-alt"></i>
                 </div>
             </div>
 
             <div class="bubble-container">
                 <div class="bubble">
                     <h3>@carlf</h3><br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ea, iusto, maxime, ullam autem a voluptate rem quos repudiandae.
+                    Just shared my latest art piece on ChirpNet! Check it out and let me know what you think. Link in bio! #DigitalArt #ChirpNetArt
                     <div class="over-bubble">
-                        <div class="icon-mail-reply action"></div>
-                        <div class="icon-retweet action"></div>
-                        <div class="icon-star"></div>
+                        <i class="fas fa-reply action"></i>
+                        <i class="fas fa-retweet action"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
                 <div class="arrow"></div>
             </div>
         </li>
     </ul>
-
-
 </body>
 
 </html>

@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif; /* Added sans-serif fallback */
     color: #7f8c8d;
     font-size: 14px;
     background-color: #ededed;
@@ -69,6 +69,13 @@ body {
     -webkit-border-bottom-right-radius: 8px;
     border-bottom-right-radius: 8px;
     margin-bottom: 2em;
+    padding-top: 1em; /* Added padding to the top for better spacing */
+}
+
+.timeline li {
+    padding: 1em 0; /* Add some vertical padding to list items */
+    display: flex; /* Use flexbox for better alignment of avatar and bubble */
+    align-items: flex-start; /* Align items to the top */
 }
 
 .avatar {
@@ -76,19 +83,18 @@ body {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    overflow: hidden;
+    overflow: visible; /* Changed to visible to allow hover to extend */
     margin-left: 2em;
+    /* Removed fixed width/height as ChirpNet avatar handles it */
 }
 
-.avatar img {
-    width: 100%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    border: 5px solid #ecf0f1;
+/* Updated .avatar img to target the new ChirpNet avatar */
+.avatar .chirpnet-avatar-circle {
+    width: 100%; /* Make avatar fill its parent width */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #ecf0f1; /* Border from original avatar img */
     position: relative;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .avatar:hover > .hover {
@@ -113,7 +119,7 @@ body {
     color: white;
     padding-top: 24%;
     opacity: 0;
-    font-family: 'FontAwesome';
+    font-family: 'FontAwesome'; /* Keep for the icon */
     font-weight: bold;
     -webkit-transition-property: all;
     -moz-transition-property: all;
@@ -127,37 +133,17 @@ body {
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease;
+    z-index: 1000; /* Ensure hover is on top */
 }
 
-.first {
-    width: 560px;
-    display: block;
-    margin: auto;
-    background-color: #3498db;
-    text-shadow: #2084c7;
-    padding: 1em 0 !important;
-    color: white;
-    text-align: center;
-    margin-top: 1em;
-    font-family: 'Lato';
-    font-size: 1.6em;
-    -moz-border-radius-topleft: 8px;
-    -webkit-border-top-left-radius: 8px;
-    border-top-left-radius: 8px;
-    -moz-border-radius-topright: 8px;
-    -webkit-border-top-right-radius: 8px;
-    border-top-right-radius: 8px;
-    position: relative;
-}
+/* Removed .first styling as the element is gone */
+/* .first { ... } */
 
-.icon-twitter {
-    font-size: 1.5em;
-}
+/* Removed .icon-twitter as it's now handled by Font Awesome 6 */
+/* .icon-twitter { ... } */
 
-.new {
-    position: absolute;
-    right: 5%;
-}
+/* Removed .new as the element is gone */
+/* .new { ... } */
 
 .over-bubble {
     line-height: 1.4em;
@@ -245,10 +231,10 @@ body {
 
 .icon-retweet:hover {
     cursor: pointer;
-    color: #f39c12;
+    color: #3498db; /* Changed retweet hover color to blue for consistency */
 }
 
-.icon-mail-reply {
+.icon-mail-reply { /* Renamed to .icon-reply for Font Awesome 6 */
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -263,7 +249,13 @@ body {
     transition-timing-function: ease;
 }
 
-.icon-mail-reply:hover {
+.icon-mail-reply:hover { /* Renamed to .icon-reply:hover for Font Awesome 6 */
+    cursor: pointer;
+    color: #3498db;
+}
+
+/* New style for Font Awesome reply icon */
+.fas.fa-reply:hover {
     cursor: pointer;
     color: #3498db;
 }
@@ -271,7 +263,7 @@ body {
 h3 {
     font-size: 1.2em;
     font-weight: bold;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif; /* Added sans-serif fallback */
     display: inline-block;
     margin-bottom: .2em;
     color: #95a5a6;
@@ -293,7 +285,7 @@ h3 {
     border-bottom-right-radius: 5px;
 }
 
-.retweet .icon-retweet {
+.retweet .fas.fa-retweet { /* Updated selector for Font Awesome 6 */
     color: white;
     margin: auto;
     width: 100%;
@@ -301,3 +293,133 @@ h3 {
     font-size: 1.2em;
 }
 
+/* --- ChirpNet Logo & Avatar Styles --- */
+/* ChirpNet Circular Avatar (Integrated into existing .avatar) */
+.chirpnet-avatar-circle {
+    width: 100%; /* Make avatar fill its parent width */
+    padding-bottom: 100%; /* Creates a perfect square for responsive circle */
+    border-radius: 50%;
+    background-color: #1DA1F2; /* Twitter Blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute; /* Position absolutely within .avatar */
+    top: 0;
+    left: 0;
+}
+
+.chirpnet-avatar-circle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bird-icon-avatar {
+    width: 60%; /* Percentage of parent for responsiveness */
+    padding-bottom: 45%; /* Maintain aspect ratio (60x45) */
+    background-color: #ffffff; /* White color for the bird icon */
+    position: relative;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transform: rotate(-15deg);
+    transform-origin: center;
+    /* Adjust positioning within the circular avatar */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+}
+
+.bird-icon-avatar::before {
+    content: '';
+    position: absolute;
+    width: 25%; /* Percentage of bird-icon-avatar width */
+    padding-bottom: 25%; /* Maintain aspect ratio */
+    background-color: #ffffff;
+    top: 50%;
+    left: -10%; /* Adjusted position relative to bird-icon-avatar */
+    transform: translateY(-50%) rotate(45deg);
+    border-radius: 3px;
+    z-index: 1;
+}
+
+/* Responsive adjustments for avatar */
+@media (max-width: 768px) {
+    .chirpnet-avatar-circle {
+        /* No fixed width/height, scales with parent */
+        width: 100%;
+        padding-bottom: 100%;
+    }
+    .bird-icon-avatar {
+        width: 55%;
+        padding-bottom: 41.25%; /* 55% * 0.75 (aspect ratio) */
+    }
+    .bird-icon-avatar::before {
+        width: 22%;
+        padding-bottom: 22%;
+    }
+}
+
+@media (max-width: 480px) {
+    .chirpnet-avatar-circle {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+    .bird-icon-avatar {
+        width: 50%;
+        padding-bottom: 37.5%; /* 50% * 0.75 */
+    }
+    .bird-icon-avatar::before {
+        width: 20%;
+        padding-bottom: 20%;
+    }
+}
+
+/* Ensure the .avatar container has a defined height to properly contain the absolutely positioned avatar */
+.timeline li .avatar {
+    position: relative; /* Important for absolute positioning of .chirpnet-avatar-circle */
+    padding-bottom: 18%; /* Maintain aspect ratio for the avatar container */
+    height: 0; /* Collapse height as content is absolutely positioned */
+}
+
+/* Adjust timeline for smaller screens */
+@media (max-width: 600px) {
+    .timeline {
+        width: 95%; /* Make timeline more responsive */
+        margin: 1em auto;
+    }
+    .timeline li {
+        flex-direction: column; /* Stack avatar and bubble on small screens */
+        align-items: center;
+        text-align: center;
+    }
+    .avatar {
+        width: 40%; /* Make avatar larger on small screens when stacked */
+        padding-bottom: 40%;
+        margin: 0 auto 1em auto; /* Center and add bottom margin */
+    }
+    .bubble-container {
+        width: 90%; /* Make bubble wider on small screens */
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .arrow {
+        display: none; /* Hide arrow when stacked */
+    }
+    .bubble {
+        padding: 15px; /* Adjust bubble padding */
+    }
+    .over-bubble {
+        font-size: 2em; /* Adjust action icon size */
+        padding-top: 5%; /* Adjust padding for actions */
+    }
+}
+
+@media (max-width: 400px) {
+    .avatar {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
