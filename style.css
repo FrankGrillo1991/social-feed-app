@@ -13,6 +13,7 @@
     border: 2px solid #1DA1F2 !important;
 }
 .bubble {
+    margin-top: 0.5em; /* Added margin for spacing */
     background: #fffbe6 !important;
     border: 1px solid #f39c12 !important;
     color: #333 !important;
@@ -319,7 +320,7 @@ h3 {
     min-height: 70px;
     box-sizing: border-box;
 }
-}
+
 .chirpnet-avatar-circle:after {
     content: '';
     display: block;
