@@ -304,6 +304,7 @@ body {
     -webkit-transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 
 .icon-star:hover {
