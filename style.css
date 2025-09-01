@@ -12,6 +12,8 @@
     background: #f0f8ff !important;
     border: 2px solid #1DA1F2 !important;
 }
+
+
 .bubble {
     margin-top: 1em; /* Added margin for spacing */
     background: #fffbe6 !important;
@@ -58,6 +60,7 @@
     min-height: 70px;
     margin: 0 1em 0 0;
     flex-shrink: 0;
+    margin-top: 1em; /* Adjust the value as needed for your design */
 }
 @media (max-width: 600px) {
     .timeline-item-flex {
