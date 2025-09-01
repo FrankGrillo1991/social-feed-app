@@ -1,3 +1,27 @@
+/* Style for over-bubble action icons */
+.over-bubble .action, .over-bubble .icon-star {
+    font-size: 1.2em;
+    color: #b0b0b0;
+    margin-right: 0.7em;
+    transition: color 0.2s, transform 0.2s;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.over-bubble .action:last-child, .over-bubble .icon-star:last-child {
+    margin-right: 0;
+}
+.over-bubble .icon-mail-reply.action:hover {
+    color: #1da1f2;
+    transform: scale(1.15) rotate(-10deg);
+}
+.over-bubble .icon-retweet.action:hover {
+    color: #27ae60;
+    transform: scale(1.15) rotate(10deg);
+}
+.over-bubble .icon-star:hover {
+    color: #f39c12;
+    transform: scale(1.2) rotate(-8deg);
+}
 /* Add top margin to the first avatar for alignment */
 .timeline li:first-of-type .avatar {
     margin-top: 0.5em;
