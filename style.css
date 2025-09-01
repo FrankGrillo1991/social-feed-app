@@ -49,6 +49,12 @@
     align-items: flex-start;
 }
 
+.avatar {
+    margin-right: 1em; /* space between avatar and bubble */
+    margin-left: 0;    /* ensure no left margin */
+    flex-shrink: 0;    /* avatar keeps its size */
+}
+
 /* Ensure the .avatar container has a defined height to properly contain the absolutely positioned avatar */
 .timeline li .avatar {
     position: relative;
@@ -156,6 +162,16 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+}
+
+.avatar {
+    margin-right: 1em; /* space between avatar and bubble */
+    margin-left: 0;    /* ensure no left margin */
+    flex-shrink: 0;    /* avatar keeps its size */
+}
+
+.bubble-container {
+    flex: 1;           /* bubble takes remaining space */
 }
 
 @media (max-width: 768px) {
