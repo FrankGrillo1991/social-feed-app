@@ -33,6 +33,10 @@
     font-size: 2em;
     margin-bottom: 1em;
     font-family: 'Quicksand', 'Lato', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 /* Flex container for timeline item to allow mobile stacking */
 .timeline-item-flex {
