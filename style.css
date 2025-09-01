@@ -50,13 +50,14 @@
 .timeline-item-flex {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center; /* Vertically center avatar and bubble */
 }
 
 .avatar {
-    margin-right: 1em; /* space between avatar and bubble */
-    margin-left: 0;    /* ensure no left margin */
-    flex-shrink: 0;    /* avatar keeps its size */
+    margin-top: 0;      /* Remove top margin if present */
+    margin-bottom: 0;   /* Remove bottom margin if present */
+    margin-right: 1em;  /* Space between avatar and bubble */
+    flex-shrink: 0;     /* Prevent avatar from shrinking */
 }
 
 /* Ensure the .avatar container has a defined height to properly contain the absolutely positioned avatar */
@@ -166,17 +167,18 @@ body {
 .timeline-item-flex {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center; /* Vertically center avatar and bubble */
 }
 
 .avatar {
-    margin-right: 1em; /* space between avatar and bubble */
-    margin-left: 0;    /* ensure no left margin */
-    flex-shrink: 0;    /* avatar keeps its size */
+    margin-top: 0;      /* Remove top margin if present */
+    margin-bottom: 0;   /* Remove bottom margin if present */
+    margin-right: 1em;  /* Space between avatar and bubble */
+    flex-shrink: 0;     /* Prevent avatar from shrinking */
 }
 
 .bubble-container {
-    flex: 1;           /* bubble takes remaining space */
+    flex: 1;            /* Bubble takes remaining space */
     margin-right: 1em;
 }
 
