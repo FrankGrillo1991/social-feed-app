@@ -544,3 +544,7 @@ h3 {
         font-size: 0.95em;
     }
 }
+
+.timeline li:nth-of-type(2) .bubble-container {
+    margin-bottom: 1em; /* Adjust value as needed */
+}
