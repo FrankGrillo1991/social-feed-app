@@ -1,34 +1,3 @@
-@media (max-width: 320px) {
-    .timeline {
-        padding: 0 0.1em 0.5em 0.1em;
-    }
-    .avatar {
-        width: 95%;
-        padding-bottom: 95%;
-    }
-    .chirpnet-avatar-circle {
-        width: 100%;
-        padding-bottom: 100%;
-    }
-    .bird-icon-avatar {
-        width: 22%;
-        padding-bottom: 16%;
-    }
-    .bird-icon-avatar::before {
-        width: 8%;
-        padding-bottom: 8%;
-    }
-    .bubble {
-        padding: 5px;
-        font-size: 0.9em;
-    }
-    .over-bubble {
-        font-size: 0.95em;
-    }
-    h3 {
-        font-size: 0.9em;
-    }
-}
 /* Flex container for timeline item to allow mobile stacking */
 .timeline-item-flex {
     display: flex;
