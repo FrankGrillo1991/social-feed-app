@@ -92,6 +92,9 @@
     height: 40px;
     min-width: 40px;
     min-height: 40px;
+    }
+    .timeline li:first-of-type .avatar {
+        padding-top: 0.7em;
   }
   .bubble-container {
     margin-right: 0.2em;
