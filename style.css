@@ -32,6 +32,12 @@
     align-items: flex-start;
 }
 
+/* Ensure the .avatar container has a defined height to properly contain the absolutely positioned avatar */
+.timeline li .avatar {
+    position: relative; /* Important for absolute positioning of .chirpnet-avatar-circle */
+    padding-bottom: 18%; /* Maintain aspect ratio for the avatar container */
+    height: 0; /* Collapse height as content is absolutely positioned */
+}
 @media (max-width: 600px) {
     .timeline-item-flex {
         flex-direction: column;
