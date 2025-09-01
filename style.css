@@ -172,6 +172,7 @@ body {
 
 .bubble-container {
     flex: 1;           /* bubble takes remaining space */
+    margin-left: auto;
 }
 
 @media (max-width: 768px) {
