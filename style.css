@@ -359,7 +359,7 @@ body {
         align-items: center;
     }
     .timeline li:first-of-type .avatar {
-        margin-top: 2em;
+        margin-top: 4em;
     }
 }
 
