@@ -395,20 +395,20 @@ h3 {
 /* --- ChirpNet Logo & Avatar Styles --- */
 /* ChirpNet Circular Avatar (Integrated into existing .avatar) */
 .chirpnet-avatar-circle {
-    width: 100%; /* Make avatar fill its parent width */
-    padding-bottom: 100%; /* Creates a perfect square for responsive circle */
+    width: 100%;
+    padding-bottom: 100%;
     border-radius: 50%;
-    background-color: #1DA1F2; /* Twitter Blue background */
+    background: linear-gradient(135deg, #1DA1F2 70%, #0d8ddb 100%);
+    border: 4px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 16px rgba(30, 144, 255, 0.18), 0 1.5px 6px rgba(0,0,0,0.10);
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s cubic-bezier(.4,2,.6,1);
     cursor: pointer;
-    position: absolute; /* Position absolutely within .avatar */
-    top: 0;
-    left: 0;
+    position: relative;
+    margin: 0 auto;
 }
 
 .chirpnet-avatar-circle:hover {
@@ -417,28 +417,25 @@ h3 {
 }
 
 .bird-icon-avatar {
-    width: 60%; /* Percentage of parent for responsiveness */
-    padding-bottom: 45%; /* Maintain aspect ratio (60x45) */
-    background-color: #ffffff; /* White color for the bird icon */
-    position: relative;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    transform: rotate(-15deg);
-    transform-origin: center;
-    /* Adjust positioning within the circular avatar */
+    width: 60%;
+    padding-bottom: 45%;
+    background-color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     transform: translate(-50%, -50%) rotate(-15deg);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
 }
 
 .bird-icon-avatar::before {
     content: '';
     position: absolute;
-    width: 25%; /* Percentage of bird-icon-avatar width */
-    padding-bottom: 25%; /* Maintain aspect ratio */
-    background-color: #ffffff;
+    width: 25%;
+    padding-bottom: 25%;
+    background-color: #e6f7ff;
     top: 50%;
-    left: -10%; /* Adjusted position relative to bird-icon-avatar */
+    left: -10%;
     transform: translateY(-50%) rotate(45deg);
     border-radius: 3px;
     z-index: 1;
