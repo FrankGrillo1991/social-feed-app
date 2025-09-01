@@ -358,6 +358,9 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .timeline li:first-of-type .avatar {
+        margin-top: 2em;
+    }
 }
 
 @media (max-width: 600px) {
