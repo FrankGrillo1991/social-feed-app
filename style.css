@@ -361,17 +361,16 @@ h3 {
 /* Responsive adjustments for avatar */
 @media (max-width: 768px) {
     .chirpnet-avatar-circle {
-        /* No fixed width/height, scales with parent */
         width: 100%;
         padding-bottom: 100%;
     }
     .bird-icon-avatar {
-        width: 55%;
-        padding-bottom: 41.25%; /* 55% * 0.75 (aspect ratio) */
+        width: 40%;
+        padding-bottom: 30%; /* 40% * 0.75 (aspect ratio) */
     }
     .bird-icon-avatar::before {
-        width: 22%;
-        padding-bottom: 22%;
+        width: 16%;
+        padding-bottom: 16%;
     }
 }
 
@@ -381,12 +380,12 @@ h3 {
         padding-bottom: 100%;
     }
     .bird-icon-avatar {
-        width: 50%;
-        padding-bottom: 37.5%; /* 50% * 0.75 */
+        width: 32%;
+        padding-bottom: 24%; /* 32% * 0.75 */
     }
     .bird-icon-avatar::before {
-        width: 20%;
-        padding-bottom: 20%;
+        width: 12%;
+        padding-bottom: 12%;
     }
 }
 
