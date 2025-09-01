@@ -1,3 +1,12 @@
+/* Fallback: Show a generic user icon if .bird-icon-avatar is empty */
+.bird-icon-avatar:empty::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="white"/><path d="M16 17c-3.3 0-6 2.7-6 6v1h12v-1c0-3.3-2.7-6-6-6zm0-2c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3z" fill="%2395a5a6"/></svg>') no-repeat center/contain;
+    margin: 0 auto;
+}
 /* DEBUG: Temporary background and border for visibility */
 .timeline {
     background: #f0f8ff !important;
@@ -310,14 +319,6 @@ h3 {
     pointer-events: none;
 }
 
-.bird-icon-avatar:empty::before {
-    content: '';
-    display: block;
-    width: 38px;
-    height: 38px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="white"/><path d="M24 10c-1 .5-2 .8-3 .9.9-.5 1.6-1.4 1.9-2.4-1 .6-2 .9-3 1.1-.9-.9-2.2-1.5-3.6-1.5-2.7 0-4.8 2.2-4.8 4.8 0 .4 0 .8.1 1.1-4-.2-7.5-2.1-9.8-5-.4.7-.6 1.4-.6 2.2 0 1.5.8 2.8 2 3.6-.7 0-1.4-.2-2-.5v.1c0 2.1 1.5 3.8 3.5 4.2-.4.1-.8.2-1.2.2-.3 0-.6 0-.8-.1.6 1.8 2.3 3.1 4.3 3.1-1.6 1.2-3.6 1.9-5.7 1.9-.4 0-.8 0-1.2-.1 2 1.3 4.4 2.1 7 2.1 8.4 0 13-7 13-13 0-.2 0-.4 0-.6.9-.7 1.6-1.4 2.2-2.3z" fill="%231da1f2"/></svg>') no-repeat center/contain;
-    margin: 0 auto;
-}
 .chirpnet-avatar-circle:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
