@@ -387,39 +387,60 @@ h3 {
 /* Adjust timeline for smaller screens */
 @media (max-width: 600px) {
     .timeline {
-        width: 95%; /* Make timeline more responsive */
-        margin: 1em auto;
+        width: 100%;
+        margin: 0;
+        padding: 0 0.5em 2em 0.5em;
+        box-shadow: none;
+        border-radius: 0;
     }
     .timeline li {
-        flex-direction: column; /* Stack avatar and bubble on small screens */
+        flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 0.5em 0;
     }
     .avatar {
-        width: 40%; /* Make avatar larger on small screens when stacked */
-        padding-bottom: 40%;
-        margin: 0 auto 1em auto; /* Center and add bottom margin */
+        width: 60%;
+        padding-bottom: 60%;
+        margin: 0 auto 1em auto;
     }
     .bubble-container {
-        width: 90%; /* Make bubble wider on small screens */
+        width: 100%;
         padding-left: 0;
         margin: 0 auto;
     }
     .arrow {
-        display: none; /* Hide arrow when stacked */
+        display: none;
     }
     .bubble {
-        padding: 15px; /* Adjust bubble padding */
+        padding: 12px;
+        font-size: 1em;
     }
     .over-bubble {
-        font-size: 2em; /* Adjust action icon size */
-        padding-top: 5%; /* Adjust padding for actions */
+        font-size: 1.5em;
+        padding-top: 3%;
+    }
+    h3 {
+        font-size: 1em;
     }
 }
 
 @media (max-width: 400px) {
+    .timeline {
+        padding: 0 0.2em 1em 0.2em;
+    }
     .avatar {
-        width: 50%;
-        padding-bottom: 50%;
+        width: 80%;
+        padding-bottom: 80%;
+    }
+    .bubble {
+        padding: 8px;
+        font-size: 0.95em;
+    }
+    .over-bubble {
+        font-size: 1.1em;
+    }
+    h3 {
+        font-size: 0.95em;
     }
 }
