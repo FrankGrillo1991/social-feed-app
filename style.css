@@ -567,7 +567,7 @@ h3 {
         height: 28px;
     }
   .timeline li:first-of-type .avatar {
-    margin-top: 1em; /* Adjust value as needed */
+    margin-top: 3em; /* Adjust value as needed */
   }
 }
 
