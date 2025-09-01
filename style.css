@@ -1,3 +1,7 @@
+/* Add top margin to the first avatar for alignment */
+.timeline li:first-of-type .avatar {
+    margin-top: 0.5em;
+}
 /* Fallback: Show a generic user icon if .bird-icon-avatar is empty */
 .bird-icon-avatar:empty::before {
     content: '';
