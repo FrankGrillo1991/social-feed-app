@@ -1,3 +1,13 @@
+/* DEBUG: Temporary background and border for visibility */
+.timeline {
+    background: #f0f8ff !important;
+    border: 2px dashed #1DA1F2 !important;
+}
+.bubble {
+    background: #fffbe6 !important;
+    border: 1px solid #f39c12 !important;
+    color: #333 !important;
+}
 /* Main container for timeline */
 .main-container {
     max-width: 600px;
