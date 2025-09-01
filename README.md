@@ -1,1 +1,1 @@
-Twitter Clone developed with HTML & CSS
+Chirpnet Client developed with HTML & CSS
