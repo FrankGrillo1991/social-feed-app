@@ -10,8 +10,8 @@
 /* DEBUG: Temporary background and border for visibility */
 .timeline {
     background: #f0f8ff !important;
-    border: 2px dashed #1DA1F2 !important;
-
+    border: 2px solid #1DA1F2 !important;
+}
 .bubble {
     background: #fffbe6 !important;
     border: 1px solid #f39c12 !important;
